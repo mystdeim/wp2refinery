@@ -1,6 +1,6 @@
 = wp2refinery
 
-Convert your Wordpress blog database to the Refinery Blog Engine. It will bring bring over users, posts, comments, categories, and tags. It's not always a perfect match, but it will try to insert as much information as possible.
+Convert your Wordpress blog database to the Refinery Blog Engine or to the same database. It will bring bring over users, posts, comments, categories, and tags. It's not always a perfect match, but it will try to insert as much information as possible.
 
 == Parameters
 
@@ -8,25 +8,15 @@ For commandline help use
   $ wp2refinery --help
 
   -f : the xml file you want to import (this would be the export from wordpress)
-  -d : mysql database
-  -u : mysql username
-  -p : mysql password
+  -d : sqlite database
 
 Sample Use:
-  $ wp2refinery -f wordpress.export.xml -d blog_development -u root -p mypass
+  $ wp2refinery -f wordpress.export.xml -d development.sqlite3
 
-== Contributing to wp2refinery
- 
-* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
-* Fork the project
-* Start a feature/bugfix branch
-* Commit and push until you are happy with your contribution
-* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
-* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+Use clear.sql to reset data
 
 == Copyright
 
-Copyright (c) 2011 Nic Haynes. See LICENSE.txt for
+Copyright (c) 2011 Roman Novikov. See LICENSE.txt for
 further details.
 
